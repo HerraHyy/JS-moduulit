@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Teht4.js" defer></script>
+    <title>TV Show Search</title>
+</head>
+<body>
+<header>
+      <h1>TV Show Search</h1>
+    </header>
+    <main>
+      <form id="search-form" action="https://api.tvmaze.com/search/shows" method="GET">
+        <label for="query">Enter a TV show name:</label>
+        <input id="query" name="q" type="text">
+        <button type="submit">Search</button>
+      </form>
+      <table id="results">
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Summary</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </main>
+</body>
+</html>
